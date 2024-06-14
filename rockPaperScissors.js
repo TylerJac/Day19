@@ -7,7 +7,7 @@ function getHand() {
 function playRound(p1, p2) {
     const x = p1.getHand();
     const y = p2.getHand();
-
+    //if statement for winnings
     if ((x === 'scissors' && y === 'paper') || (x === 'rock' && y === 'scissors') || (x === 'paper' && y === 'rock')) {
         console.log(`Player 1 (${p1.name}) won: ${x} vs ${y}`);
         return 'p1';
