@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors Tournament</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Rock, Paper, Scissors Tournament</h1>
+        <div class="scoreboard">
+            <div class="player" id="player1">
+                <h2 id="name1">Player 1: John</h2>
+                <p>Score: <span id="score1">0</span></p>
+            </div>
+            <div class="player" id="player2">
+                <h2 id="name2">Player 2: Jill</h2>
+                <p>Score: <span id="score2">0</span></p>
+            </div>
+            <div class="player" id="player3">
+                <h2 id="name3">Player 3: Alice</h2>
+                <p>Score: <span id="score3">0</span></p>
+            </div>
+            <div class="player" id="player4">
+                <h2 id="name4">Player 4: Bob</h2>
+                <p>Score: <span id="score4">0</span></p>
+            </div>
+        </div>
+        <div class="results">
+            <p id="round-result"></p>
+            <p id="game-result"></p>
+            <p id="tournament-result"></p>
+        </div>
+        <button id="start-tournament">Start Tournament</button>
+    </div>
     <script src="rockPaperScissors.js"></script>
 </body>
 </html>
