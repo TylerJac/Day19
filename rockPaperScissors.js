@@ -51,10 +51,27 @@ function playTournament(player1, player2, player3, player4, playUntil) {
     // Reset scores for final round
     document.getElementById('score1').textContent = 0;
     document.getElementById('score2').textContent = 0;
- 
+    document.getElementById('score3').textContent = 0;
+    document.getElementById('score4').textContent = 0;
+
+    
+    
+    let winnerScore1, winnerScore2;
+
+    if (winner1 === player1) {
+        winnerScore1 = 'score1';
+    } else {
+        winnerScore1 = 'score2';
+    }
+
+    if (winner2 === player3) {
+        winnerScore2 = 'score3';
+    } else {
+        winnerScore2 = 'score4';
+    }
 
     // Final round
-    const tournamentWinner = playGame(winner1, winner2, 'score1' || 'score3', 'score2' ||'score4', playUntil);
+    const tournamentWinner = playGame(winner1, winner2, winnerScore1, winnerScore2, playUntil);
 
     // Announce the winner
     document.getElementById('tournament-result').textContent = `${tournamentWinner.name} is the world champion!`;
