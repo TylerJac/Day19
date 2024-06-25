@@ -54,8 +54,7 @@ function playTournament(player1, player2, player3, player4, playUntil) {
     document.getElementById('score3').textContent = 0;
     document.getElementById('score4').textContent = 0;
 
-    
-    
+    // Determine score IDs for the final round
     let winnerScore1, winnerScore2;
 
     if (winner1 === player1) {
